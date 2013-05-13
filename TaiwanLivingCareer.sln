@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaiwanLivingCareer.Core", "TaiwanLivingCareer.Core\TaiwanLivingCareer.Core.csproj", "{5D1C18BA-77C6-46BF-AF86-68AE931D16FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaiwanLivingCareer.Web", "TaiwanLivingCareer.Web\TaiwanLivingCareer.Web.csproj", "{DA2B40A8-01C0-42E1-8D24-BB404BC6F4CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6ADFCF23-79EA-4BCD-8A6D-B1ABB5779A35}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D1C18BA-77C6-46BF-AF86-68AE931D16FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1C18BA-77C6-46BF-AF86-68AE931D16FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1C18BA-77C6-46BF-AF86-68AE931D16FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1C18BA-77C6-46BF-AF86-68AE931D16FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2B40A8-01C0-42E1-8D24-BB404BC6F4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2B40A8-01C0-42E1-8D24-BB404BC6F4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2B40A8-01C0-42E1-8D24-BB404BC6F4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2B40A8-01C0-42E1-8D24-BB404BC6F4CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

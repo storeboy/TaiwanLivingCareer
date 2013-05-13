@@ -1,0 +1,9 @@
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\TaiwanLivingCareer.Core.dll.config
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\TaiwanLivingCareer.Core.dll
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\TaiwanLivingCareer.Core.pdb
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\EntityFramework.dll
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\EntityFramework.xml
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\obj\Debug\TaiwanLivingCareer.Core.csprojResolveAssemblyReference.cache
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\obj\Debug\TaiwanLivingCareer.Core.dll
+C:\VSProjects\MarkProject\TaiwanLivingCareer\TaiwanLivingCareer.Core\obj\Debug\TaiwanLivingCareer.Core.pdb
