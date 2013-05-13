@@ -49,6 +49,7 @@ namespace TaiwanLivingCareer.Core.Models.Repository
 
         /// <summary>
         /// Creates the specified instance.
+        /// bbb
         /// </summary>
         /// <param name="instance">The instance.</param>
         /// <exception cref="System.ArgumentNullException">instance</exception>
