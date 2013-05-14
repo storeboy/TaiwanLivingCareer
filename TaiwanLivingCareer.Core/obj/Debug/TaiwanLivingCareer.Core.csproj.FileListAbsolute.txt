@@ -13,6 +13,5 @@ C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\TaiwanLivingCaree
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\EntityFramework.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\EntityFramework.xml
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\bin\Debug\zh-Hant\EntityFramework.resources.dll
-C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\obj\Debug\TaiwanLivingCareer.Core.csprojResolveAssemblyReference.cache
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\obj\Debug\TaiwanLivingCareer.Core.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Core\obj\Debug\TaiwanLivingCareer.Core.pdb

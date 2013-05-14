@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BIZ\Class\Account\AccountManager.cs" />
+    <Compile Include="BIZ\Interface\Account\IAccountManager.cs" />
+    <Compile Include="Helper\ResultHelper.cs" />
     <Compile Include="Models\Entity\table1.cs">
       <DependentUpon>TLCEntity.tt</DependentUpon>
     </Compile>
@@ -71,11 +74,7 @@
     <Compile Include="Models\Repository\GenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BIZ\Class\" />
-    <Folder Include="BIZ\Interface\" />
-    <Folder Include="Helper\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="Models\Entity\TLCEntity.Context.tt">

@@ -82,3 +82,5 @@ C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\zh-Hant\System.Web.WebPa
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\obj\Debug\TaiwanLivingCareer.Web.csprojResolveAssemblyReference.cache
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\obj\Debug\TaiwanLivingCareer.Web.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\obj\Debug\TaiwanLivingCareer.Web.pdb
+C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\TaiwanLivingCareer.Core.dll
+C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\TaiwanLivingCareer.Core.pdb
