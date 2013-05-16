@@ -1,4 +1,30 @@
 ﻿
+var m_timer = null;
+var orgDiagram = null;
+
+jQuery(document).ready(function () {
+   
+    jQuery.ajaxSetup({
+        cache: false
+    });
+   
+    $(window).resize(function () {
+        onWindowResize();
+    });
+
+    Setup(jQuery("#centerpanel"));
+
+    $.getJSON("/Franchisee/SettleOrgSource", "", function (data) {
+        LoadOrgItem(data);
+    });
+
+    ResizePlaceholder();
+});
+
+function Setup(selector) {
+    orgDiagram = selector.orgDiagram(GetOrgDiagramConfig());
+}
+
 
 function LoadOrgItem(data) {
 
@@ -10,11 +36,12 @@ function LoadOrgItem(data) {
         var options = new primitives.orgdiagram.Config();
         options.rootItem = rootItem;
         options.cursorItem = rootItem;
-        options.hasSelectorCheckbox = primitives.common.Enabled.False;
-        options.templates = [getTLCOrgTemplate()];
-        options.onItemRender = onTemplateRender;
 
-        jQuery(".basicdiagram").orgDiagram(options);
+        jQuery("#centerpanel").orgDiagram("option", {
+            rootItem: rootItem,
+            cursorItem: rootItem
+        });
+        jQuery("#centerpanel").orgDiagram("update");
     }
 }
 
@@ -63,6 +90,42 @@ function getObjects(obj, key, val) {
     return objects;
 }
 
+function GetOrgDiagramConfig() {
+   
+
+    var templates = [];
+    templates.push(getTLCOrgTemplate());
+
+    return {
+        graphicsType: primitives.common.GraphicsType.Canvas,
+        pageFitMode: primitives.orgdiagram.PageFitMode.FitToPage,
+        orientationType: primitives.orgdiagram.OrientationType.Top,
+        verticalAlignment: primitives.common.VerticalAlignmentType.Middle,
+        horizontalAlignment: primitives.common.HorizontalAlignmentType.Center,
+        connectorType:  primitives.orgdiagram.ConnectorType.Curved,
+        minimalVisibility: primitives.orgdiagram.Visibility.Dot,
+        hasSelectorCheckbox: primitives.common.Enabled.False,
+        selectionPathMode: primitives.orgdiagram.SelectionPathMode.FullStack,
+        leavesPlacementType: primitives.orgdiagram.ChildrenPlacementType.Horizontal,
+        hasButtons:  primitives.common.Enabled.False,
+        //buttons: buttons,
+        templates: templates,
+        //onButtonClick: onButtonClick,
+        //onCursorChanging: onCursorChanging,
+        //onCursorChanged: onCursorChanged,
+        //onHighlightChanging: onHighlightChanging,
+        //onHighlightChanged: onHighlightChanged,
+        //onSelectionChanged: onSelectionChanged,
+        onItemRender: onTemplateRender,
+        //itemTitleFirstFontColor: primitives.common.Colors.White,
+        //itemTitleSecondFontColor: primitives.common.Colors.White,
+        showLabels: primitives.common.Enabled.Auto,
+        labelOrientation: primitives.text.TextOrientationType.Horizontal,
+        labelPlacement: primitives.common.PlacementType.Top
+    };
+}
+
+
 function onTemplateRender(event, data) {
     switch (data.renderingMode) {
         case primitives.common.RenderingMode.Create:
@@ -97,8 +160,7 @@ function getTLCOrgTemplate() {
     result.itemSize = new primitives.common.Size(160, 60);
     result.minimizedItemSize = new primitives.common.Size(3, 3);
     result.highlightPadding = new primitives.common.Thickness(2, 2, 2, 2);
-
-
+    
     var itemTemplate = jQuery(
       '<div class="bp-item bp-corner-all bt-item-frame">'
         + '<div name="titleBackground" class="bp-item bp-corner-all bp-title-frame" style="top: 2px; left: 2px; width: 216px; height: 20px;">'
@@ -118,4 +180,27 @@ function getTLCOrgTemplate() {
     result.itemTemplate = itemTemplate.wrap('<div>').parent().html();
 
     return result;
+}
+
+function onWindowResize() {
+    if (m_timer == null) {
+        m_timer = window.setTimeout(function () {
+            ResizePlaceholder();
+            jQuery("#centerpanel").orgDiagram("option", GetOrgDiagramConfig());
+            jQuery("#centerpanel").orgDiagram("update", primitives.orgdiagram.UpdateMode.Refresh)
+            window.clearTimeout(m_timer);
+            m_timer = null;
+        }, 300);
+    }
+}
+
+
+function ResizePlaceholder() {
+    var bodyWidth = $(window).width() - 40
+    var bodyHeight = $(window).height() - 20
+    jQuery("#centerpanel").css(
+    {
+        "width": bodyWidth + "px",
+        "height": bodyHeight + "px"
+    });
 }
