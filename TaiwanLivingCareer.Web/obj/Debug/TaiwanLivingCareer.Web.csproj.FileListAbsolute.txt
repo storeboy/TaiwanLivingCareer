@@ -57,7 +57,9 @@ C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\System.Web.Razor.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\System.Web.WebPages.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\System.Web.WebPages.Razor.dll
+C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\TaiwanLivingCareer.Core.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\WebGrease.dll
+C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\TaiwanLivingCareer.Core.pdb
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\EntityFramework.xml
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\Newtonsoft.Json.xml
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\System.Net.Http.Formatting.xml
@@ -82,5 +84,3 @@ C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\zh-Hant\System.Web.WebPa
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\obj\Debug\TaiwanLivingCareer.Web.csprojResolveAssemblyReference.cache
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\obj\Debug\TaiwanLivingCareer.Web.dll
 C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\obj\Debug\TaiwanLivingCareer.Web.pdb
-C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\TaiwanLivingCareer.Core.dll
-C:\Github\TaiwanLivingCareer\TaiwanLivingCareer.Web\bin\TaiwanLivingCareer.Core.pdb
